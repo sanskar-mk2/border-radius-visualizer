@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="main-div">
+        <img src="./Sprite-0002.png">
+        <div id="sliders">
+            <label for="TL">Top Left</label>
+            <label for="TR">Top Right</label>
+            <label for="BR">Bottom Right</label>
+            <label for="BL">Bottom Left</label>
+            <div class="break"></div>
+            <input type="range" min="0" max="100" value="50" class="slider" id="TL" onchange="setTL(this);getCSS();">
+            <input type="range" min="0" max="100" value="50" class="slider" id="TR" onchange="setTR(this);getCSS();">
+            <input type="range" min="0" max="100" value="50" class="slider" id="BR" onchange="setBR(this);getCSS();">
+            <input type="range" min="0" max="100" value="50" class="slider" id="BL" onchange="setBL(this);getCSS();">
+        </div>
+        <div id="test-sub">
+
+        </div>
+        <textarea disabled id="output"></textarea>
+        <input type="button" value="📋 Copy!" onclick="copyCSS()" id="copy-btn">
+    </div>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+#main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #332c50;
+}
+
+#sliders {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+label {
+    background-color: #94e344;
+}
+
+label:hover {
+    background-color: #46878f;
+}
+
+img {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* #labels {
+    display: flex;
+    justify-content: center;
+} */
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+#test-sub {
+    background-color: #46878f;
+    height: 100px;
+    width: 100px;
+}
+
+html, body {
+    margin: 0;
+    border: 0;
+    font-size: 1.1em;
+    color: #332c50;
+}
+
+#output {
+    width: 400px;
+    height: 150px;
+    resize: none;
+}
+
+#copy-btn {
+    width: 400px;
+}
+
+#copy-btn:hover {
+    background-color: #46878f;
+}
+
+input, textarea {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #332c50;
+    background-color: #94e344;
+}
