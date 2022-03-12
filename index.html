@@ -6,22 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
 </head>
 
 <body>
     <div id="main-div">
-        <img src="./Sprite-0002.png">
+        <img src="./assets/img/Sprite-0002.png">
         <div id="sliders">
-            <label for="TL">Top Left</label>
-            <label for="TR">Top Right</label>
-            <label for="BR">Bottom Right</label>
-            <label for="BL">Bottom Left</label>
-            <div class="break"></div>
-            <input type="range" min="0" max="100" value="50" class="slider" id="TL" onchange="setTL(this);getCSS();">
-            <input type="range" min="0" max="100" value="50" class="slider" id="TR" onchange="setTR(this);getCSS();">
-            <input type="range" min="0" max="100" value="50" class="slider" id="BR" onchange="setBR(this);getCSS();">
-            <input type="range" min="0" max="100" value="50" class="slider" id="BL" onchange="setBL(this);getCSS();">
+            <div>
+                <label for="TL">Top Left</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="TL" onchange="setRD(this, this.id);">
+                <input type="range" min="0" max="100" value="0" class="slider" id="TL2"
+                    onchange="setRD(this, this.id);">
+            </div>
+            <div>
+                <label for="TR">Top Right</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="TR" onchange="setRD(this, this.id);">
+                <input type="range" min="0" max="100" value="0" class="slider" id="TR2"
+                    onchange="setRD(this, this.id);">
+            </div>
+            <div>
+                <label for="BR">Bottom Right</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="BR" onchange="setRD(this, this.id);">
+                <input type="range" min="0" max="100" value="0" class="slider" id="BR2"
+                    onchange="setRD(this, this.id);">
+            </div>
+            <div>
+                <label for="BL">Bottom Left</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="BL" onchange="setRD(this, this.id);">
+                <input type="range" min="0" max="100" value="0" class="slider" id="BL2"
+                    onchange="setRD(this, this.id);">
+            </div>
         </div>
         <div id="test-sub">
 
@@ -31,8 +46,10 @@
     </div>
 
 
-    <script src="./script.js"></script>
+    <script src="./src/scripts/script.js" defer></script>
 
 </body>
 
 </html>
+
+<!-- <div class="break"></div> -->

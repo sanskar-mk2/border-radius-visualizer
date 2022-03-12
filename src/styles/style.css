@@ -1,11 +1,26 @@
+:root {
+    --TL: 0%;
+    --TL2: 0%;
+    --TR: 0%;
+    --TR2: 0%;
+    --BR: 0%;
+    --BR2: 0%;
+    --BL: 0%;
+    --BL2: 0%;
+}
+
 #main-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #332c50;
+}
+
+.slider {
+    
 }
 
 #sliders {
@@ -16,6 +31,9 @@
 
 label {
     background-color: #94e344;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 label:hover {
@@ -25,6 +43,7 @@ label:hover {
 img {
     margin-top: 1em;
     margin-bottom: 1em;
+    max-width: 100%;
 }
 
 /* #labels {
@@ -41,6 +60,8 @@ img {
     background-color: #46878f;
     height: 100px;
     width: 100px;
+    margin: 2em;
+    border-radius: var(--TL) var(--TR) var(--BR) var(--BL) / var(--TL2) var(--TR2) var(--BR2) var(--BL2);
 }
 
 html, body {
@@ -51,13 +72,14 @@ html, body {
 }
 
 #output {
+    max-width: 100%;
     width: 400px;
     height: 150px;
-    resize: none;
 }
 
 #copy-btn {
     width: 400px;
+    max-width: 100%;
 }
 
 #copy-btn:hover {
@@ -69,4 +91,13 @@ input, textarea {
     margin-bottom: 1em;
     color: #332c50;
     background-color: #94e344;
+    max-width: 100%;
 }
+
+#sliders div {
+    background-color: #46878f;
+
+    
+}
+
+@media only screen and (max-width: 1000px) {}
