@@ -15,4 +15,4 @@ Adjust CSS border-radius using sliders and live visualization and copy the resul
 
 ## Example Screenshots
 
-![Example](examples/example.png)
+![image](https://github.com/user-attachments/assets/20f92d6f-8ff8-454e-8020-20642f86f7f6)
